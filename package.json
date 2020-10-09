@@ -1,0 +1,16 @@
+{
+  "name": "volume_peak",
+  "version": "1.0.0",
+  "description": "Play your favorite music without leaving the browser",
+  "main": "index.js",
+  "repository": "https://github.com/rramiachraf/volume-peak.git",
+  "author": "rramiachraf <onlyjs@tuta.io>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "concurrently \"cd server && yarn dev\" \"cd client && yarn dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
