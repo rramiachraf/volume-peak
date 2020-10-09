@@ -1,15 +1,14 @@
-#### ./server/.env
+#### variables.env
 
 ```
 POSTGRES_USER=
-
 POSTGRES_HOST=
-
 POSTGRES_PASSWORD=
-
 POSTGRES_DB=
-
 POSTGRES_PORT=
 
 SESSION_SECRET=
+CORS=http://localhost:3000
+
+NODE_ENV=production
 ```
