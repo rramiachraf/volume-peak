@@ -1,3 +1,5 @@
+<img width="300" src="http://ec2-15-237-113-234.eu-west-3.compute.amazonaws.com/logo.png/"/>
+
 #### Credentials
 
 ```
