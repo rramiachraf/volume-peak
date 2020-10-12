@@ -1,3 +1,10 @@
+#### Credentials
+
+```
+email: demo@demo.me
+password: 123456
+```
+
 #### variables.env
 
 ```
