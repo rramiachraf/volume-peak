@@ -20,6 +20,8 @@ const server = new ApolloServer({
 
 const app = express()
 
+app.set('trust proxy', 1)
+
 app.use(cors({ origin: process.env.CORS!, credentials: true }))
 
 app.use(
@@ -41,7 +43,7 @@ app.use(readArtwork)
 
 server.applyMiddleware({
   app,
-  path: '/api',
+  path: '/gql',
   cors: { origin: '', credentials: true }
 })
 

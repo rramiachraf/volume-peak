@@ -39,6 +39,9 @@ const TrackContainer = styled.div`
 `
 
 const ArtistPage = ({ artist, tracks }) => {
+  if (!artist) {
+    return <h1>404</h1>
+  }
   return (
     <MusicPlayerLayout>
       <Container>
@@ -78,8 +81,12 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
       }
     }
   `
-  const { artist, tracks } = await client.request(query, { id: params.id })
-  return { props: { artist, tracks } }
+  try {
+    const { artist, tracks } = await client.request(query, { id: params.id })
+    return { props: { artist, tracks } }
+  } catch (e) {
+    return { props: {} }
+  }
 }
 
 export default withAuth(ArtistPage)
